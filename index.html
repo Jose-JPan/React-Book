@@ -63,9 +63,21 @@
 		// Updating a node...
 		person.age = 29;
 
-		person.forEach(person => {
-			console.log(person.name)
+		
+
+		// 7 - Spread Operator: The spread operator (...) splits an iterable object into
+		//	individual values. In React, it can be used to push values into another array,
+		// 	for example when we want to add a new item to a Todo list by utilizing setState
+		// 	(this will be explained in the next chapter):
+		this.setState({
+			items: [
+				...this.state.items, // Here we are spreading the current items
+				{
+			task: 'My new task', // This will be a new task in our Todo list.
+				}
+			]
 		});
+	
 	    
 	</script>
 
