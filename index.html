@@ -20,8 +20,31 @@
 	   // console.log(y); // uncaught ReferenceError: y is not defined
 
 	    const pi = 3.1416;
-	    pi = 5; // Uncaught TypeError: Assignment to constant variable.i
+	    pi = 5; // Uncaught TypeError: Assignment to constant variable.
+
+		// If we declare an array with const, we can manipulate the array elements
+		//  (add, remove, or modify elements):
+		const cryptoCurrencies = ['BTC', 'ETH', 'XRP', 'ERT'];
+		console.log(cryptoCurrencies[0]);
+		console.log(cryptoCurrencies[1]);
+		console.log(cryptoCurrencies[2]);
+		console.log(cryptoCurrencies[3]);
 		
+		// Adding ERT: ['BTC', 'ETH', 'XRP', 'ERT'];
+		cryptoCurrencies.push('ERT');
+		console.log(cryptoCurrencies[0]);
+		console.log(cryptoCurrencies[1]);
+		console.log(cryptoCurrencies[2]);
+		console.log(cryptoCurrencies[3]);
+
+		// Will remove the first element: ['ETH', 'XRP', 'ERT'];
+		cryptoCurrencies.shift();
+		console.log(cryptoCurrencies[0]);
+		console.log(cryptoCurrencies[1]);
+		console.log(cryptoCurrencies[2]);
+
+		// Modifying an element
+		cryptoCurrencies[1] = 'LTC'; // ['ETH', 'LTC', 'ERT'];
 	    
 	</script>
     </head>
