@@ -1,5 +1,6 @@
 <html> 
     <head>
+
 	<script> 
 	    var name = 'Carlos Santana';
 	    let age = 30;
@@ -45,8 +46,29 @@
 
 		// Modifying an element
 		cryptoCurrencies[1] = 'LTC'; // ['ETH', 'LTC', 'ERT'];
+
+		// Also using objects, we can add, remove, or modify the nodes:
+		const person = {
+			name: 'Carlos Santana',
+			age: 30,
+			email: 'carlos@ilkzoft.com'
+		};
+
+		// Adding a new node...
+		person.website = 'https://www.codejobs.com';
+
+		// Removing a node...
+		delete person.email;
+
+		// Updating a node...
+		person.age = 29;
+
+		person.forEach(person => {
+			console.log(person.name)
+		});
 	    
 	</script>
+
     </head>
     <body>
 	<p>coco</p>
